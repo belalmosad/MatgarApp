@@ -1,10 +1,42 @@
 ﻿@page
 @model IndexModel
 @{
+    Layout = null;
     ViewData["Title"] = "Home page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+        <title>@ViewData["Title"]</title>
+        <style>
+            
+        </style>
+    </head>
+    <body>
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                <th scope="col">Product ID</th>
+                <th scope="col">Name</th>
+                <th scope="col">Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if(Model.Products.Any())
+                {
+                    foreach(var item in Model.Products)
+                    {
+                        <tr>
+                            <th scope="row">@item.ID</th>
+                            <td>@item.Name</td>
+                            <td>@item.Price $</td>
+                        </tr>
+                    }
+                }
+            </tbody>
+        </table>
+
+    </body>
+</html>

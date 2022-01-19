@@ -10,16 +10,19 @@ namespace MatgarApp.Pages
 {
     public class IndexModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
+        private readonly ProductListService _service;
+        public List<ProductModel> Products { get; set; }
 
-        public IndexModel(ILogger<IndexModel> logger)
+        public IndexModel(ProductListService service)
         {
-            _logger = logger;
+            _service = service;
         }
+        
 
-        public void OnGet()
+        public ActionResult OnGet()
         {
-
+            Products = _service.GetAllProducts();
+            return Page();
         }
     }
 }

@@ -15642,6 +15642,11 @@
       "FilePath": "d:\\Projects\\MatgarApp\\Pages\\_ViewImports.cshtml",
       "TargetPath": "Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
+    },
+    {
+      "FilePath": "d:\\Projects\\MatgarApp\\Pages\\ProductDetails.cshtml",
+      "TargetPath": "Pages\\ProductDetails.cshtml",
+      "FileKind": "mvc"
     }
   ],
   "SerializationFormat": "0.2"

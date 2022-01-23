@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-
+using System.Linq;
 namespace MatgarApp
 {
     public class ProductListService
@@ -14,5 +14,6 @@ namespace MatgarApp
         {
             return _products;
         }
+        public ProductModel GetProduct(int id) => _products.Where(i => i.ID == id).FirstOrDefault();
     }
 }

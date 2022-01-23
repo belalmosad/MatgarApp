@@ -1,0 +1,24 @@
+@page "/ProductDetails/{id}"
+@model ProductDetailsModel
+@{
+    Layout = null;
+    ViewData["Title"] = Model.Product.Name + " - Details";
+}
+
+<html>
+    <head>
+        <title>@ViewData["Title"]</title>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    </head>
+
+    <body>
+        <h1>@Model.Product.Name Details</h1>
+        <div class="card bg-light mb-3" style="max-width: 18rem;">
+            <div class="card-header">@Model.Product.Name</div>
+            <div class="card-body">
+                <h5 class="card-title">Price: @Model.Product.Price $</h5>
+            </div>
+        </div>
+
+    </body>
+</html>

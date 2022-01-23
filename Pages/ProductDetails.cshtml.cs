@@ -16,6 +16,8 @@ namespace MatgarApp
         {
             Product = _service.GetProduct(id);
             if(Product == null) return RedirectToPage("/Index");
+            // var url = Url.Page("/ProductDetails", new {id});
+            // System.Console.WriteLine(url);
             return Page();
         }
     }

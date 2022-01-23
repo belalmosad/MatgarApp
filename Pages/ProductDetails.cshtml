@@ -8,6 +8,11 @@
 <html>
     <head>
         <title>@ViewData["Title"]</title>
+        <style>
+            * {
+                margin: 30px;;
+            }
+        </style>
         <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     </head>
 
@@ -19,6 +24,7 @@
                 <h5 class="card-title">Price: @Model.Product.Price $</h5>
             </div>
         </div>
+        <a href="/">Back to main</a>
 
     </body>
 </html>

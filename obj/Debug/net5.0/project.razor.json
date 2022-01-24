@@ -15644,6 +15644,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "d:\\Projects\\MatgarApp\\Pages\\AddProduct.cshtml",
+      "TargetPath": "Pages\\AddProduct.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "d:\\Projects\\MatgarApp\\Pages\\ProductDetails.cshtml",
       "TargetPath": "Pages\\ProductDetails.cshtml",
       "FileKind": "mvc"

@@ -15,5 +15,13 @@ namespace MatgarApp
             return _products;
         }
         public ProductModel GetProduct(int id) => _products.Where(i => i.ID == id).FirstOrDefault();
+        public void AddProduct(int id, string name, double price)
+        {
+            ProductModel newProduct = new ProductModel();
+            newProduct.ID = id;
+            newProduct.Name = name;
+            newProduct.Price = price;
+            _products.Add(newProduct);
+        }
     }
 }

@@ -1,0 +1,35 @@
+@page 
+@model AddProductModel
+@{
+    Layout = null;
+    ViewData["Title"] = "Add Product";
+}
+<html>
+    <head>
+        <title>@ViewData["Title"]</title>
+        <style>
+            * {
+                width: 80%;
+                margin: auto;
+            }
+        </style>
+        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    </head>
+    <body>
+        <form asp-page-handler="OnPost" method="post">
+            <div class="form-group">
+                <label asp-for="Input.ID">Enter ID</label>
+                <input type="text" asp-for="Input.ID" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter ID">
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.Name">Enter Name</label>
+                <input asp-for="Input.Name" type="text" class="form-control" id="exampleInputPassword1" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label asp-for="Input.Price">Enter Price</label>
+                <input asp-for="Input.Price" type="text" class="form-control" id="exampleInputPassword1" placeholder="Price">
+            </div>
+            <button type="submit" class="btn btn-primary">Add Product</button>
+            </form>
+    </body>
+</html>

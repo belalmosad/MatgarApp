@@ -37,3 +37,4 @@ D:\Projects\MatgarApp\obj\Debug\net5.0\MatgarApp.pdb
 D:\Projects\MatgarApp\obj\Debug\net5.0\MatgarApp.genruntimeconfig.cache
 D:\Projects\MatgarApp\obj\Debug\net5.0\MatgarApp.csproj.CopyComplete
 D:\Projects\MatgarApp\obj\Debug\net5.0\Razor\Pages\ProductDetails.cshtml.g.cs
+D:\Projects\MatgarApp\obj\Debug\net5.0\Razor\Pages\AddProduct.cshtml.g.cs

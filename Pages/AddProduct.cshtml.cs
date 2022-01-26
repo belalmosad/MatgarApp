@@ -17,7 +17,6 @@ namespace MatgarApp
         {
            if (!ModelState.IsValid)
            {
-               System.Console.WriteLine("Somethin wrong");
                return Page();
            }
             _service.AddProduct(Input.ID, Input.Name, Input.Price);

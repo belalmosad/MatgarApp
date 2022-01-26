@@ -23,5 +23,11 @@ namespace MatgarApp
             newProduct.Price = price;
             _products.Add(newProduct);
         }
+        public void UpdateProduct(int id, string name, double price)
+        {
+            ProductModel product = _products.Where(item => item.ID == id).FirstOrDefault();
+            product.Name = name;
+            product.Price = price;
+        }
     }
 }

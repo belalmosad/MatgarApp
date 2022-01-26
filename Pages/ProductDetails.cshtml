@@ -1,19 +1,12 @@
 @page "{id}"
 @model ProductDetailsModel
 @{
-    Layout = null;
     ViewData["Title"] = Model.Product.Name + " - Details";
 }
 
 <html>
     <head>
         <title>@ViewData["Title"]</title>
-        <style>
-            * {
-                margin: 30px;;
-            }
-        </style>
-        <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     </head>
 
     <body>
